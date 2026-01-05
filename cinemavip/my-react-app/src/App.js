@@ -7,6 +7,7 @@ import MovieDetail from "./components/MovieDetail";
 import Booking from "./components/Booking";
 import Login from "./components/Login";
 import Register from "./components/Register";
+import UpcomingMovies from "./components/UpcomingMovies";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/movies" element={<MovieList />} />
+          <Route path="/upcoming" element={<UpcomingMovies />} />
           <Route path="/movie/:id" element={<MovieDetail />} />
           <Route path="/booking/:id" element={<Booking />} />
           <Route path="/login" element={<Login />} />
